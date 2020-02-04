@@ -1,0 +1,14 @@
+- name: change route53
+  route53: 
+    state: present
+    zone: gkread.com
+    record: www.gkread.com
+    failover: PRIMARY
+    type: CNAME
+    ttl: 30
+    identifier: server1
+    private_zone: yes
+    overwrite: yes
+    value: "{{ NEW_ALIAS }}"
+    wait: yes
+    health_check: "f5cc2654-5899-451e-82c5-50f6311d57a2"
