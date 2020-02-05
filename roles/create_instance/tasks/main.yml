@@ -14,14 +14,14 @@
 
 - name: Create EC2 instances
   ec2:
-    key_name: jenkins
+    key_name: that-one
     instance_type: t2.nano
-    image: ami-0347ed3d05fcc5b06
+    image: ami-006c052f934cd9329
     user_data: "USERDATA"
     region: us-east-2
     group_id:
-      - sg-01bebeb4dbd2ed8b3
-      - sg-0d6781017b1e3dd2b
+      - sg-0d8114eafade23e18
+      - sg-98a3adfa
     wait: yes
     instance_tags:
       Name: web_server
