@@ -20,7 +20,7 @@ pipeline {
 
     stage('Create EC2 Instance') {
       steps {
-        ansiblePlaybook playbook: 'main.yml', inventory: 'inventory'
+        ansiblePlaybook playbook: 'main.yml', '--syntax-check', inventory: 'inventory'
       }
     }
 
