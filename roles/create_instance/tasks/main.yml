@@ -19,11 +19,14 @@
     image: ami-006c052f934cd9329
     user_data: |
                #!/bin/sh
-               sudo apt-get install nginx -y
+               sudo apt update
+               sudo apt install nginx -y
                sudo systemctl start nginx
+               sudo systemctl enable nginx
+               sudo cp /var/www/html/index.nginx-debian.html /var/www/html/index.html
     region: us-east-2
     group_id:
-      - sg-0d8114eafade23e18
+      - sg-0d8114eafade23e18 
       - sg-98a3adfa
     wait: yes
     instance_tags:
