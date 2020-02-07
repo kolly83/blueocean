@@ -1,1 +1,1 @@
-NEW_ALIAS: "nginx-ELBNAME-1318625756.us-east-2.elb.amazonaws.com"
+NEW_ALIAS: "{{ application }}-ELBNAME-1318625756.us-east-2.elb.amazonaws.com"
