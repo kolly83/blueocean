@@ -11,4 +11,4 @@
     overwrite: yes
     value: "{{ NEW_ALIAS }}"
     wait: yes
-    health_check: "a16ebf94-616d-4e62-8861-2475d1bf8a0f"
+    health_check: "c45822c0-b326-4cdd-b769-7ea0f3aea806"
