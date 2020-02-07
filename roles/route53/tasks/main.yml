@@ -9,6 +9,6 @@
     identifier: server1
     private_zone: yes
     overwrite: yes
-    value: "{{ NEW_ALIAS }}"
+    value: "NEW_ALIAS"
     wait: yes
     health_check: "f5cc2654-5899-451e-82c5-50f6311d57a2"
