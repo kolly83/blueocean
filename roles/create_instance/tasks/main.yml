@@ -31,10 +31,10 @@
     wait: yes
     instance_tags:
       Name: web_server
-      application: "nginx"
+      application: "nginxgreen"
     exact_count: 2
     count_tag:
-      application: "nginx"
+      application: "nginxgreen"
   register: ec2_instances
 
 - name: Wait for servers come online
