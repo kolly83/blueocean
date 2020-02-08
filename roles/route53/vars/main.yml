@@ -1,1 +1,1 @@
-NEW_ALIAS: "{{ application }}-ELBNAME-1871207078.us-east-2.elb.amazonaws.com"
+NEW_ALIAS: "{{ application }}-ELBNAME-187120707.us-east-2.elb.amazonaws.com"
